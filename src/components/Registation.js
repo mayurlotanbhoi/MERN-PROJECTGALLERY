@@ -30,13 +30,11 @@ const Registation = () => {
     formdata.append("Mob", e.target.Mob.value);
 
     const res = await fetch("https://projectgallery-api.onrender.com/user/register", {
-      method: "POST",
+      method: "post",
       body: formdata,
     });
 
     const data = await res.json();
-
-    // console.log(data);
     window.alert(data.massege);
 
     if (res.status === 201) navigation("/login");

@@ -49,7 +49,7 @@ const userSlicer = createSlice({
   },
 });
 
-
+// https://projectgallery-api.onrender.com/user
 
 export const fetchUser = createAsyncThunk("user/data", async () => {
   try {
