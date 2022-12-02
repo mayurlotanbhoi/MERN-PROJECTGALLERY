@@ -29,7 +29,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetch = async () => {
       const project = await FetchData(
-        "http://localhost:8000/user/allProject/" + pages
+        "https://projectgallery-api.onrender.com/user/allProject/" + pages
       );
       setFetchedData(project.allProject);
       setfiltered(project.allProject);
@@ -46,7 +46,7 @@ const HomePage = () => {
 
     if (email) {
       const project = await FetchData(
-        "http://localhost:8000/user/serchProject/" + email
+        "https://projectgallery-api.onrender.com/user/serchProject/" + email
       );
       setFetchedData(project.allProject);
       settotal(project.total);

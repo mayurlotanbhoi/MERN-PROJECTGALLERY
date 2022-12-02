@@ -53,8 +53,8 @@ const userSlicer = createSlice({
 
 export const fetchUser = createAsyncThunk("user/data", async () => {
   try {
-    // console.log("call");
-    const res = await fetch("http://localhost:8000/user", {
+    // console.log("call");8000
+    const res = await fetch("https://projectgallery-api.onrender.com/user", {
       method: "get",
       credentials: "include",
     });

@@ -45,7 +45,7 @@ export default function ProjectCard({
 
     // console.log(project);
 
-    const res = await fetch("http://localhost:8000/user/public", {
+    const res = await fetch("https://projectgallery-api.onrender.com/user/public", {
       method: "POST",
       body: JSON.stringify(project),
       credentials: "include",
@@ -85,7 +85,7 @@ export default function ProjectCard({
                                 onClick={() => dispatch(aboutme(project))}
                                 src={
                                   ` ${Avatars || project?.Avatar}`
-                                    ? "http://localhost:8000/" +
+                                    ? "https://projectgallery-api.onrender.com/" +
                                       `${Avatars || project.Avatar}`
                                     : "/static/images/avatar/1.jpg"
                                 }
@@ -97,7 +97,7 @@ export default function ProjectCard({
                               onClick={() => dispatch(aboutme(project))}
                               src={
                                 `${Avatars || project?.Avatar}`
-                                  ? "http://localhost:8000/" +
+                                  ? "https://projectgallery-api.onrender.com/" +
                                     `${Avatars || project.Avatar}`
                                   : "/static/images/avatar/1.jpg"
                               }
@@ -120,7 +120,7 @@ export default function ProjectCard({
                       <CardMedia
                         component="img"
                         height="130"
-                        image={"http://localhost:8000/" + project.Photo}
+                        image={"https://projectgallery-api.onrender.com/" + project.Photo}
                         alt="Paella dish"
                       />
                       <CardContent>

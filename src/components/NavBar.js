@@ -44,7 +44,7 @@ const NavBar = () => {
     //   })
     //   .catch((error) => console.log(error));
     const fetch = async () => {
-      const res = await FetchData("http://localhost:8000/user/logout");
+      const res = await FetchData("https://projectgallery-api.onrender.com/user/logout");
 
       if (res.massege === "logout") {
         navigation("/login");
@@ -87,7 +87,7 @@ const NavBar = () => {
                 alt="Remy Sharp"
                 src={
                   data?.Avatar
-                    ? "http://localhost:8000/" + data.Avatar
+                    ? "https://projectgallery-api.onrender.com/" + data.Avatar
                     : "/static/images/avatar/1.jpg"
                 }
               ></Avatar>
