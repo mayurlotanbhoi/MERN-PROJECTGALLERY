@@ -2,7 +2,7 @@
   "name": "clint",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mayurlotanbhoi.github.io/MERN-PROJECTGALLERY-Client.git",
+  "homepage": "http://mayurlotanbhoi.github.io/MERN-PROJECTGALLERY-Client.git",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
