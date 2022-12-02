@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(25, 118, 210); 
+}
+
+#myproject{
+  color: whitesmoke;
+  font-weight: bolder;
+  
+}
+
+.medal{
+  color: 
+  rgb(241, 197, 14);
+
+  font-size: 30px;
+}
