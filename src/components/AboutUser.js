@@ -42,6 +42,7 @@ const AboutMe = () => {
                   : "https://th.bing.com/th/id/OIP.jryuUgIHWL-1FVD2ww8oWgHaHa?w=210&h=210&c=7&r=0&o=5&dpr=1.25&pid=1.7"
               }
             ></Avatar>
+            
             <Stack
               sx={{
                 display: "flex",

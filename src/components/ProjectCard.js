@@ -45,6 +45,7 @@ export default function ProjectCard({
 
     // console.log(project);
 
+    
     const res = await fetch("https://projectgallery-api.onrender.com/user/public", {
       method: "POST",
       body: JSON.stringify(project),

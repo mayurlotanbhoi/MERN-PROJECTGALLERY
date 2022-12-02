@@ -32,7 +32,7 @@ const MyProject = () => {
     // console.log(fetchedData);
   }, [Refreshe]);
 
-  // const [fetchedData] = useFetch("http://localhost:8000/user/mayProject");
+  
 
   const { Avatar, email, projectDetails } = fetchedData || {};
 
