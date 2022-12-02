@@ -28,21 +28,23 @@ const NavBar = () => {
   const dispatch = useDispatch();
 
   const logOut = () => {
-    // fetch("http://localhost:8000/user/logout", {
-    //   method: "get",
-    //   credentials: "include",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    // })
-    //   .then((res) => {
-    //     if (res.status === 200) {
-    //       navigation("/login");
-    //       dispatch(logout());
-    //       dispatch(removedata());
-    //     }
-    //   })
-    //   .catch((error) => console.log(error));
+    fetch("https://projectgallery-api.onrender.com/logout", {
+      method: "get",
+      credentials: "include",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => {
+        if (res.status === 200) {
+          navigation("/login");
+          dispatch(logout());
+          dispatch(removedata());
+        }
+      })
+      .catch((error) => console.log(error));
+
+      
     const fetch = async () => {
       const res = await FetchData("https://projectgallery-api.onrender.com/user/logout");
 
@@ -115,6 +117,7 @@ const NavBar = () => {
                     <Typography>LOGOUT</Typography>
                   </Link>
                 </MenuItem>
+
               ) : (
                 <MenuItem>
                   <Link to="/login">
