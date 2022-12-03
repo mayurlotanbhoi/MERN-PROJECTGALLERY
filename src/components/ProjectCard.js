@@ -35,7 +35,7 @@ export default function ProjectCard({
   const dispatch = useDispatch();
 
   const handleChangePage = (event, newPage) => {
-    console.log(newPage);
+    // console.log(newPage);
     setpages(newPage - 1);
   };
 
@@ -198,7 +198,7 @@ export default function ProjectCard({
       {/* {console.log(+(totalPage / 9 + 1).toFixed(0))} */}
       {!Avatars ? (
         <Pagination
-          count={+(totalPage / 9 + 1).toFixed(0)}
+          count={(totalPage / 25 + 1).toFixed(0)}
           variant="outlined"
           shape="rounded"
           onChange={handleChangePage}
