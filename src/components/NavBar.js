@@ -28,22 +28,7 @@ const NavBar = () => {
   const dispatch = useDispatch();
 
   const logOut = () => {
-    // fetch("https://projectgallery-api.onrender.com/logout", {
-    //   method: "get",
-    //   credentials: "include",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    // })
-    //   .then((res) => {
-    //     if (res.status === 200) {
-
-    //       navigation("/login");
-    //       dispatch(logout());
-    //       dispatch(removedata());
-    //     }
-    //   })
-    //   .catch((error) => console.log(error));
+    
 
 
     const fetch = async () => {
@@ -55,10 +40,10 @@ const NavBar = () => {
      
       console.log(res.massege)
       if (res.massege === "Logout SuccesFull") {
-        dispatch(logout());
+        // dispatch(logout());
         // dispatch(removedata());
         window.alert("LOGOUT SUCCESFULL");
-        window.location.reload(false)
+        // window.location.reload(false)
         navigation("/login");
       }
 
