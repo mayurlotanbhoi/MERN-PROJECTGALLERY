@@ -34,7 +34,7 @@ function App() {
       <div className="App">
         <NavBar />
         <div className="container">
-          <Routes history={browserHistory}>
+          <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/Login" element={<Login />}></Route>
             <Route path="/registation" element={<Registation />}></Route>
