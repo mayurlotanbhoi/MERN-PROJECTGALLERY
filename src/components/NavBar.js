@@ -33,21 +33,15 @@ const NavBar = () => {
 
     const fetch = async () => {
       const res = await FetchData("https://projectgallery-api.onrender.com/user/logout");
-      // const sms = await res.json()
-
-      // const sms = await res.json();
-
-     
-      console.log(res.massege)
+      
+      console.log(res)
       if (res.massege === "Logout SuccesFull") {
-        // dispatch(logout());
+        dispatch(logout());
         // dispatch(removedata());
         window.alert("LOGOUT SUCCESFULL");
         // window.location.reload(false)
         navigation("/login");
       }
-
-      // setFetchedData(project.allProject);
     };
     
     fetch();
