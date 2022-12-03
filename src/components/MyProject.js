@@ -38,7 +38,7 @@ const MyProject = () => {
 
   useEffect(() => {
     const checkLogin = () => {
-      if (Object.keys(data).length === 0) {
+      if (Object.keys(data).length > 2) {
         window.alert("To ACCES THIS PAGE YOU NEED TO LOGIN FIRST");
         navigate("/login");
       }
