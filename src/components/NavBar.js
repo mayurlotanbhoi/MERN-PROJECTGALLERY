@@ -29,8 +29,6 @@ const NavBar = () => {
 
   const logOut = () => {
     
-
-
     const fetch = async () => {
       const res = await FetchData("https://projectgallery-api.onrender.com/user/logout");
       
@@ -39,7 +37,7 @@ const NavBar = () => {
         dispatch(logout());
         dispatch(removedata());
         window.alert("LOGOUT SUCCESFULL");
-        // window.location.reload(false)
+        window.location.reload(false)
         navigation("/login");
       }
     };
