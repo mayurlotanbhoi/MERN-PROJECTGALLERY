@@ -97,7 +97,7 @@ const NavBar = () => {
                 horizontal: "right",
               }}
             >
-              {Object.keys(data).length < 2 ? (
+              {Object.keys(data).length > 2 ? (
                 <MenuItem onClick={() => logOut()}>
                   <Link>
                     <Typography>LOGOUT</Typography>
@@ -128,7 +128,7 @@ const NavBar = () => {
               </MenuItem>
             </Menu>
           </Box>
-          <Typography variant="h6">{data?.name}</Typography>
+          <Typography variant="h6">{data?.name.substring(0, str.indexOf(" "))}</Typography>
         </Stack>
       </Toolbar>
     </AppBar>
