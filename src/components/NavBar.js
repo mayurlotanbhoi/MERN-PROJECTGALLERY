@@ -37,7 +37,7 @@ const NavBar = () => {
         dispatch(logout());
         dispatch(removedata());
         window.alert("LOGOUT SUCCESFULL");
-        window.location.reload(false)
+        window.location.reload(true)
         navigation("/login");
       }
     };
@@ -128,7 +128,7 @@ const NavBar = () => {
               </MenuItem>
             </Menu>
           </Box>
-          <Typography variant="h6">{data?.name.substring(0, str.indexOf(" "))}</Typography>
+          <Typography variant="h6">{data?.name.substring(0, data?.name.indexOf(" "))}</Typography>
         </Stack>
       </Toolbar>
     </AppBar>
