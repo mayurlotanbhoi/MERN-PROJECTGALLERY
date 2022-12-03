@@ -128,7 +128,7 @@ const NavBar = () => {
               </MenuItem>
             </Menu>
           </Box>
-          <Typography variant="h6">{Object.keys(data).length > 0 ? data?.name.substring(0, data?.name.indexOf(" ")): ""}</Typography>
+          <Typography variant="h6">{Object.keys(data).length > 1 ? data?.name.substring(0, data.name.indexOf(" ")): ""}</Typography>
         </Stack>
       </Toolbar>
     </AppBar>
