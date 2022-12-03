@@ -58,7 +58,7 @@ const NavBar = () => {
         dispatch(logout());
         dispatch(removedata());
         window.alert("LOGOUT SUCCESFULL");
-        window.location.reload(true)
+        window.location.reload(false)
         navigation("/login");
       }
 
