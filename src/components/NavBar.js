@@ -28,34 +28,38 @@ const NavBar = () => {
   const dispatch = useDispatch();
 
   const logOut = () => {
-    fetch("https://projectgallery-api.onrender.com/logout", {
-      method: "get",
-      credentials: "include",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((res) => {
-        if (res.status === 200) {
-          navigation("/login");
-          dispatch(logout());
-          dispatch(removedata());
-        }
-      })
-      .catch((error) => console.log(error));
+    // fetch("https://projectgallery-api.onrender.com/logout", {
+    //   method: "get",
+    //   credentials: "include",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // })
+    //   .then((res) => {
+    //     if (res.status === 200) {
 
-      
+    //       navigation("/login");
+    //       dispatch(logout());
+    //       dispatch(removedata());
+    //     }
+    //   })
+    //   .catch((error) => console.log(error));
+
+
     const fetch = async () => {
       const res = await FetchData("https://projectgallery-api.onrender.com/user/logout");
 
-      if (res.massege === "logout") {
-        navigation("/login");
+      console.log(res)
+
+      if (res.status === 200) {
         dispatch(logout());
         dispatch(removedata());
+        navigation("/login");
       }
 
       // setFetchedData(project.allProject);
     };
+    
     fetch();
   };
 
