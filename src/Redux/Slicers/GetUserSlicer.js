@@ -23,6 +23,7 @@ const userSlicer = createSlice({
       state.data = {};
     },
     removedata(state, action) {
+      state.access = "logout";
       state.data = {};
     },
     aboutme(state, action) {

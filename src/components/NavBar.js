@@ -56,7 +56,7 @@ const NavBar = () => {
       console.log(res.massege)
       if (res.massege === "Logout SuccesFull") {
         dispatch(logout());
-        dispatch(removedata());
+        // dispatch(removedata());
         window.alert("LOGOUT SUCCESFULL");
         window.location.reload(false)
         navigation("/login");
