@@ -40,7 +40,7 @@ const MyProject = () => {
 
     const checkLogin = () => {
 
-      if (Object.keys(data).length > 1) {
+      if (Object.keys(data).length < 1) {
         window.alert("To ACCES THIS PAGE YOU NEED TO LOGIN FIRST");
         navigate("/login");
       }
