@@ -50,8 +50,16 @@ const NavBar = () => {
       const res = await FetchData("https://projectgallery-api.onrender.com/user/logout");
       // const sms = await res.json()
 
+<<<<<<< HEAD
+      const sms = await res.json();
+
+      console.log(res)
+console.log(sms)
+      if (res === "Logout SuccesFull") {
+=======
       console.log(res.massege)
       if (res.massege === "Logout SuccesFull") {
+>>>>>>> b7588b2fd60e316c87f076167bddf78961f8ea08
         dispatch(logout());
         dispatch(removedata());
         window.alert("LOGOUT SUCCESFULL");
