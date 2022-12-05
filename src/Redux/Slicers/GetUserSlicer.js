@@ -55,7 +55,7 @@ const userSlicer = createSlice({
 export const fetchUser = createAsyncThunk("user/data", async () => {
   try {
     // console.log("call");8000
-    const res = await fetch("https://projectgallery-api.onrender.com/user", {
+    const res = await fetch("https://mern-projectgallery-server-mclu8c50o-mayurlotanbhoi.vercel.app/user", {
       method: "get",
       credentials: "include",
     });

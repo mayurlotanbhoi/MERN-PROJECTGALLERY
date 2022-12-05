@@ -50,7 +50,7 @@ const AddPeoject = ({ open, setOpen }) => {
     formdata.append("Description", e.target.discre.value);
     formdata.append("Stack", e.target.Stack.value);
 
-    const res = await fetch("https://projectgallery-api.onrender.com/user/projectadd", {
+    const res = await fetch("https://mern-projectgallery-server-mclu8c50o-mayurlotanbhoi.vercel.app/user/projectadd", {
       method: "POST",
       body: formdata,
     });
@@ -90,7 +90,7 @@ const AddPeoject = ({ open, setOpen }) => {
                 }}
                 src={
                   data?.Avatar
-                    ? "https://projectgallery-api.onrender.com/" + data.Avatar
+                    ? "https://mern-projectgallery-server-mclu8c50o-mayurlotanbhoi.vercel.app/" + data.Avatar
                     : "https://th.bing.com/th/id/OIP.jryuUgIHWL-1FVD2ww8oWgHaHa?w=210&h=210&c=7&r=0&o=5&dpr=1.25&pid=1.7"
                 }
               ></Avatar>

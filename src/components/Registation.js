@@ -29,7 +29,7 @@ const Registation = () => {
     formdata.append("About", e.target.About.value);
     formdata.append("Mob", e.target.Mob.value);
 
-    const res = await fetch("https://projectgallery-api.onrender.com/user/register", {
+    const res = await fetch("https://mern-projectgallery-server-mclu8c50o-mayurlotanbhoi.vercel.app/user/register", {
       method: "post",
       body: formdata,
     });

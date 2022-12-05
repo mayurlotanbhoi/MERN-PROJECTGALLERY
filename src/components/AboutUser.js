@@ -38,7 +38,7 @@ const AboutMe = () => {
               }}
               src={
                 About.userdata?.Avatar
-                  ? `https://projectgallery-api.onrender.com/${About.userdata.Avatar}`
+                  ? `https://mern-projectgallery-server-mclu8c50o-mayurlotanbhoi.vercel.app/${About.userdata.Avatar}`
                   : "https://th.bing.com/th/id/OIP.jryuUgIHWL-1FVD2ww8oWgHaHa?w=210&h=210&c=7&r=0&o=5&dpr=1.25&pid=1.7"
               }
             ></Avatar>

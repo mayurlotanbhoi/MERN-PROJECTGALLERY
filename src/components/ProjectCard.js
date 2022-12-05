@@ -46,7 +46,7 @@ export default function ProjectCard({
     // console.log(project);
 
     
-    const res = await fetch("https://projectgallery-api.onrender.com/user/public", {
+    const res = await fetch("https://mern-projectgallery-server-mclu8c50o-mayurlotanbhoi.vercel.app/user/public", {
       method: "POST",
       body: JSON.stringify(project),
       credentials: "include",
@@ -86,7 +86,7 @@ export default function ProjectCard({
                                 onClick={() => dispatch(aboutme(project))}
                                 src={
                                   ` ${Avatars || project?.Avatar}`
-                                    ? "https://projectgallery-api.onrender.com/" +
+                                    ? "https://mern-projectgallery-server-mclu8c50o-mayurlotanbhoi.vercel.app/" +
                                       `${Avatars || project.Avatar}`
                                     : "/static/images/avatar/1.jpg"
                                 }
@@ -98,7 +98,7 @@ export default function ProjectCard({
                               onClick={() => dispatch(aboutme(project))}
                               src={
                                 `${Avatars || project?.Avatar}`
-                                  ? "https://projectgallery-api.onrender.com/" +
+                                  ? "https://mern-projectgallery-server-mclu8c50o-mayurlotanbhoi.vercel.app/" +
                                     `${Avatars || project.Avatar}`
                                   : "/static/images/avatar/1.jpg"
                               }
@@ -121,7 +121,7 @@ export default function ProjectCard({
                       <CardMedia
                         component="img"
                         height="130"
-                        image={"https://projectgallery-api.onrender.com/" + project.Photo}
+                        image={"https://mern-projectgallery-server-mclu8c50o-mayurlotanbhoi.vercel.app/" + project.Photo}
                         alt="Paella dish"
                       />
                       <CardContent>

@@ -30,7 +30,7 @@ const NavBar = () => {
   const logOut = () => {
     
     const fetch = async () => {
-      const res = await FetchData("https://projectgallery-api.onrender.com/user/logout");
+      const res = await FetchData("https://mern-projectgallery-server-mclu8c50o-mayurlotanbhoi.vercel.app/user/logout");
       
       console.log(res)
       if (res.massege === "Logout SuccesFull") {
@@ -75,7 +75,7 @@ const NavBar = () => {
                 alt="Remy Sharp"
                 src={
                   data?.Avatar
-                    ? "https://projectgallery-api.onrender.com/" + data.Avatar
+                    ? "https://mern-projectgallery-server-mclu8c50o-mayurlotanbhoi.vercel.app/" + data.Avatar
                     : "/static/images/avatar/1.jpg"
                 }
               ></Avatar>
