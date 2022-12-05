@@ -32,6 +32,10 @@ const Registation = () => {
     const res = await fetch("https://mern-projectgallery-server-mclu8c50o-mayurlotanbhoi.vercel.app/user/register", {
       method: "post",
       body: formdata,
+      credentials: "include",
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
 
     const data = await res.json();

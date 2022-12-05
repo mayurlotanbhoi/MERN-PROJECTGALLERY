@@ -53,6 +53,9 @@ const AddPeoject = ({ open, setOpen }) => {
     const res = await fetch("https://mern-projectgallery-server-mclu8c50o-mayurlotanbhoi.vercel.app/user/projectadd", {
       method: "POST",
       body: formdata,
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
 
     const data = await res.json();
